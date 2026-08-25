@@ -27,7 +27,7 @@ const categories = ["Semua", "Luxury", "Floral", "Classic", "Heritage"] as const
 
 function whatsappUrl(theme: Theme) {
   const message = `Halo Pukay Atelier, saya tertarik dengan tema ${theme.name} (Rp${theme.price}). Boleh tanya detail dan ketersediaannya?`;
-  return `https://wa.me/?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/6281295697061?text=${encodeURIComponent(message)}`;
 }
 
 function ThemeArtwork({ theme, full = false }: { theme: Theme; full?: boolean }) {

@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-4. Buka alamat yang muncul di terminal (biasanya `http://localhost:5173`).
+4. Buka `http://localhost:3000`.
 
 ## Yang mudah kamu ubah
 
@@ -23,22 +23,11 @@ npm run dev
 - Tata letak enam demo: `app/preview/[theme]/preview.css`
 - Judul browser dan preview saat link dibagikan: `app/layout.tsx`
 
-## Menghubungkan WhatsApp
+## WhatsApp dan deploy Vercel
 
-Saat sudah punya nomor WhatsApp bisnis, cari fungsi `whatsappUrl` di `app/page.tsx`.
-Ganti:
+Tombol pesan sudah memakai nomor `6281295697061`.
 
-```ts
-https://wa.me/?text=
-```
-
-menjadi:
-
-```ts
-https://wa.me/628XXXXXXXXXX?text=
-```
-
-Ganti `628XXXXXXXXXX` dengan nomor kamu tanpa tanda `+`, spasi, atau angka `0` di depan.
+Untuk deploy, push folder proyek ini ke GitHub lalu impor repositorinya di Vercel. Framework sudah dikunci ke **Next.js** lewat `vercel.json`; tidak perlu mengubah Build Command.
 
 ## Catatan
 
